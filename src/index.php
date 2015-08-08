@@ -41,8 +41,10 @@
         <div class="heading" style="margin-top: 18px;">
             <h1 class="text-center" style="font-size: 24px;">
                 <a href="features-videos.php" style="color: #000;">
-                    More Videos
-                    <img style="height: 18px; width:auto;" src="assets/img/arrow_right.svg">
+                    <button class="btn btn-consilium-o-green" style="font-size: 20px;">
+                        More Videos 
+                        <i class="fa fa-angle-right fa-lg"></i>
+                    </button>
                 </a>
             </h1>
         </div>

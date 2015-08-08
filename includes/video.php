@@ -29,7 +29,7 @@
 			<?php $l = 0; do { $l++;?>
 				<li class="list-<?php echo $l ?>">
 					<div class="embed-responsive embed-responsive-4by3 video-cont">
-						<video class="embed-responsive-item" disabled>
+						<video class="embed-responsive-item" disabled preload="metadata">
 							<source src="gallery/videos/<?php echo $row['g_video'] ?>">
 							<input type="hidden" value="<?php echo $row['g_content'] ?>" id="content">
 							<input type="hidden" value="<?php echo $row['g_title'] ?>" id="title">

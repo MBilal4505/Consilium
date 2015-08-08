@@ -52,6 +52,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Admin Users</title>
+	<link rel="stylesheet" href="../assets/font-awesome/css/font-awesome.min.css" />
 	<link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="../assets/css/custom.min.css">
 </head>
@@ -61,8 +62,13 @@
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-md-8 col-md-offset-2">
+			<div class="admin-hyperlink">
+				<a href="index.php">
+					<button class="btn btn-consilium-o-back"><i class="fa fa-chevron-left"></i></button>
+				</a>
+			</div>
 				<div class="panel panel-default text-center">
-
+					
 					<div class="panel-heading">
 						<h4>
 							Add New User

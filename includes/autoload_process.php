@@ -23,16 +23,16 @@ $items_per_group = 8;
 	    		echo '
 	        	<li class="col-lg-4 col-md-4 col-sm-6 col-xs-6 g_object ">
 	        		<div class="embed-responsive embed-responsive-4by3">
-		        		<video class="embed-responsive-item" disabled>
+		        		<video class="embed-responsive-item" disabled preload="metadata">
 							<source src="gallery/videos/'.$row['g_video'].'" type="video/mp4">
 							Your browser does not support the video tag.
 							<input type="hidden" value="'.$row['g_content'].'" id="content">
 							<input type="hidden" value="'.$row['g_title'].'" id="title">
 						</video>
 						<div class="overlay"><img src="assets/img/video_play.png">
-						<div class="img-overlay video-overlay">
-	                    	<h2>'.$row["g_title"].'</h2>
-	                    </div>
+							<div class="img-overlay video-overlay">
+		                    	<h2>'.$row["g_title"].'</h2>
+		                    </div>
 						</div>
 	        		</div>
                 </li>
@@ -43,9 +43,11 @@ $items_per_group = 8;
 	        	<li class="col-lg-4 col-md-4 col-sm-6 col-xs-6 img_object">
                     <a href="articles/article.php?article='.$row['g_id'].'">
                     	<img class="img-responsive thumbnail" src="gallery/images/'.$row['g_image'].'"/>
+                    	<div class="another-overlay"></div>
 	                    <div class="img-overlay">
 	                    	<h2>'.$row["g_title"].'</h2>
 	                    </div>
+	                    
 	                </a>
                 </li>
                 ';

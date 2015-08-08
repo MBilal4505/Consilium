@@ -69,10 +69,18 @@
             <form class="form-horizontal" role="form" name="contact-form" method="post" action="contact.php">
                 <div class="form-group">
                     <div class="col-sm-6">
-                        <input type="text" class="form-control" name="name" placeholder="Your Name">
+                        <div class="form-group">
+                            <div class="col-sm-12">
+                                <input type="text" class="form-control" name="name" placeholder="Your Name">
+                            </div>
+                        </div>
                     </div>
                     <div class="col-sm-6">
-                        <input type="email" class="form-control" name="email" placeholder="Your Email">
+                        <div class="form-group">
+                            <div class="col-sm-12">
+                                <input type="email" class="form-control" name="email" placeholder="Your Email">
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="form-group">

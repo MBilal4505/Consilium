@@ -3,7 +3,12 @@
 */
 /*@import url('../font-awesome/css/font-awesome.min.css');*/
 
-
+* {
+	-webkit-transition-duration: 0.4s;
+  	-moz-transition-duration: 0.4s;
+	-o-transition-duration: 0.4s;
+	transition-duration: 0.4s;
+}
 h1, h4 {
 	font-family: 'raleway-medium';
 }
@@ -117,7 +122,8 @@ body p {
 }
 .navbar-small .navbar-collapse {
 	padding-top: 0px;
-	max-height: 530px;
+	max-height: 400px;
+	overflow-y: scroll;
 }
 #home-page .home-nav a, .what-we-do-body .what-we-do-nav a, .wwa-body .wwa-nav a, .wwb-body .wwb-nav a, .offering-body .offering-nav a, .features-body .features-nav a, .contact-body .contact-nav a {
 	color: #FFFFFF;
@@ -150,6 +156,26 @@ body p {
 .navbar-inverse .navbar-brand:hover {
 	color: inherit;
 }
+.admin-header .navbar-inverse .navbar-toggle .icon-bar {
+    background-color: #000;
+}
+.admin-header .navbar-inverse .navbar-toggle {
+	border: none;
+}
+.admin-header .navbar-inverse .navbar-toggle:focus {
+	background-color: #FFF;
+}
+.admin-header .navbar-inverse .navbar-toggle:hover {
+	background-color: #EEE;
+}
+.admin-header .navbar .container-fluid {
+    padding-right: 5px;
+    padding-left: 5px;
+}
+/* .nav-admin .navbar-nav > li > a {
+	font-size: 12px;
+	padding: 10px 4px;
+} */
 #edit-page {
 	margin-top: 12px;
 	margin-right: 4px;
@@ -244,9 +270,15 @@ hr.fancy-line:after {
 .contact-body h2 {
 	color: #34aca0;
 }
-
+.admin-heading {
+	text-align: center;
+	color: rgb(52, 172, 160);
+}
 /*--------------------------- Common Among all pages ---------------------------*/
 
+.admin-hyperlink {
+	margin: 20px 0;
+}
 .modal-dialog {
 	margin-top: 72px;
 }
@@ -308,20 +340,41 @@ h2 {
 ul, ol {
 	margin-bottom: 20px;
 }
+.btn-consilium-o-back {
+	color: #34ACA0;
+	min-width: 80px;
+	background: transparent;
+}
+.btn:hover {
+	background-color: #FFFFFF;
+}
 .btn-consilium-o-green {
 	color: #00A652;
 	background-color: rgba(0,0,0,0);
 	border: 1px solid #00A652;
+}
+.btn-consilium-o-green:hover {
+	color: #FFFFFF;
+	background-color: #00A652;
 }
 .btn-consilium-o-blue {
 	color: #00A9C8;
 	background-color: rgba(0,0,0,0);
 	border: 1px solid #00A9C8;
 }
+.btn-consilium-o-blue:hover {
+	color: #FFFFFF;
+	background-color: #00A9C8;
+}
 .btn-consilium-round {
+	color: #34ACA0;
+	background-color: rgba(0,0,0,0);
+	padding: 6px 30px;
+	border: 1px solid #34ACA0;
+}
+.btn-consilium-round:hover {
 	color: #FFF;
 	background-color: #34ACA0;
-	padding: 6px 30px;
 }
 .btn-consilium-o {
 	color: #FFF;
@@ -336,10 +389,6 @@ ul, ol {
 }
 .btn-consilium-pointy:focus {
 	color: #FFF;
-}
-.btn:hover {
-	background-color: #eeeeee;
-	border: 1px solid #B4B4B4;
 }
 .special-p {
 	width: 100%;
@@ -387,6 +436,10 @@ footer h3 {
 footer a {
 	color: #FFFFFF;
 }
+footer a:hover {
+	opacity: 0.5;
+	color: #FFFFFF;
+}
 footer ul {
 	list-style-type: none;
 	padding-left: 0;
@@ -399,6 +452,13 @@ footer ul li {
 }
 .related-links li {
 	margin: 10px 11px;
+}
+.connect-links a {
+	display: block;
+	height: 100%;
+}
+.connect-links a i {
+	padding-top: 9px;
 }
 .connect-links li{
 	margin: 0 7px;
@@ -436,9 +496,12 @@ footer ul li {
 	-o-transition-duration: 0.4s;
 	transition-duration: 0.4s;
 }
-.panel-default > .panel-heading a:hover {
-	color: #ddd;
+.panel-default > .panel-heading:hover {
+	opacity: 0.7;
 }
+/* .panel-default > .panel-heading a:hover {
+	color: #ddd;
+} */
 .panel-title {
 	font-size: 16px;
 }
@@ -455,7 +518,7 @@ footer ul li {
 .panel-image {
 	display: inline-block;
 	vertical-align: top;
-	padding-top: 17px;
+	padding-top: 5px;
 }
 .panel-image img {
 	width: 200px;

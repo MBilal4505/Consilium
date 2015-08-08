@@ -33,7 +33,9 @@
 		}
 		?>
 		<div class="banner">
-			<div class="banner-word">"We aim to develop the leaders of today to change the world tomorrow."</div>
+			<div class="main-image-overlay">
+				<div class="banner-word">"We aim to develop the leaders of today to change the world tomorrow."</div>
+			</div>
 		</div>
 		<div class="container">
 			

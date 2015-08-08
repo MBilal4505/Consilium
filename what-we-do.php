@@ -2,11 +2,11 @@
 <?php
 require_once 'connections/connection.php';
 
-$query = "SELECT * FROM offering";
+/*$query = "SELECT * FROM wwd_accordion";
 $result = mysqli_query($con, $query);
-$record = mysqli_fetch_array($result);
+$record = mysqli_fetch_array($result);*/
 
-$acc_query = "SELECT * FROM offering_accordion";
+$acc_query = "SELECT * FROM wwd_accordion";
 $acc_result = mysqli_query($con, $acc_query);
 $acc_record = mysqli_fetch_array($acc_result);
 ?>
@@ -37,7 +37,9 @@ $acc_record = mysqli_fetch_array($acc_result);
         }
         ?>
         <div class="banner">
-            <div class="banner-word">"We aim to develop the leaders of today to change the world tomorrow."</div>
+            <div class="main-image-overlay">
+                <div class="banner-word">"We aim to develop the leaders of today to change the world tomorrow."</div>
+            </div>
         </div>
         <div class="container">
 
@@ -51,14 +53,14 @@ $acc_record = mysqli_fetch_array($acc_result);
                     <div class="panel-heading" role="tab" id="headingOne" data-toggle="collapse" data-parent="#accordion" href="#collapse<?php echo $i ?>" aria-controls="collapse<?php echo $i ?>">
                         <h4 class="panel-title">
                             <a>
-                                <?php echo $acc_record['oc_heading']; ?>
+                                <?php echo $acc_record['dc_heading']; ?>
                             </a>
                         </h4>
                     </div>
                     <div id="collapse<?php echo $i ?>" class="panel-collapse collapse <?php if($i==1) {echo "in";} ?>" role="tabpanel" aria-labelledby="headingOne">
                         <div class="panel-body" align="center">
                             <div class="panel-image"><img class="img-responsive" src="assets/img/slider-images/image1.png" alt=""></div>
-                            <div class="panel-content"><?php echo $acc_record['oc_content']; ?></div>
+                            <div class="panel-content"><?php echo $acc_record['dc_content']; ?></div>
                         </div>
                     </div>
                 </div>

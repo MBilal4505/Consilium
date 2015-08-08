@@ -44,6 +44,12 @@
 	    background-color: #ddd;
 	}
 }
+@media screen and (max-width: 854px) {
+	.nav > li > a {
+	    padding-left: 8px;
+	    padding-right: 8px;
+	}
+}
 @media screen and (max-width: 768px) {
 	footer h3 {
 		text-align: center;
@@ -69,6 +75,9 @@
 @media screen and (max-width: 640px) {
 	.panel-content {
 		width: 90%;
+	}
+	.panel-content p {
+		padding-top: 20px;
 	}
 	.firm-tiles {
 		width: 90%;

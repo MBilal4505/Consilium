@@ -27,12 +27,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Consultancy: Write Article</title>
-	<!-- <link rel="stylesheet" type="text/css" href="css/jquery-text.css"> -->
-	<script type="text/javascript" src="http://code.jquery.com/jquery.min.js" charset="utf-8"></script>
-	<link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="../../css/main.css">
+	<link rel="stylesheet" type="text/css" href="../../assets/css/custom.min.css">
 	
-	<script src="../../js/ckeditor/ckeditor.js"></script>
+	<script src="../../assets/js/ckeditor/ckeditor.js"></script>
 	<script>
 
 		// This code is generally not necessary, but it is here to demonstrate
@@ -101,16 +98,6 @@
 		
 	</div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
-	<!--<script type="text/javascript" src="js/jquery-te-1.4.0.min.js" charset="utf-8"></script> 
-
-	<script>
-		$('.jqte-text').jqte();
-		
-		// settings of status
-		var jqteStatus = true;
-	</script>
-	-->
-	
+	<script type="text/javascript" src="../../assets/js/bootstrap.min.js"></script>
 </body>
 </html>

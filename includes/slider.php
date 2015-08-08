@@ -9,7 +9,7 @@
 	<div class="carousel-inner" role="list-box">
 		<div class="item active">
 			<div class="main-slider-image" style="background-image: url('assets/img/slider-images/image1.png')">
-				<div class="main-slider-overlay">
+				<div class="main-image-overlay">
 					<div class="carousel-caption">
 						<h3>"We aim to develop the leaders of today to change the world tomorrow."</h3>
 						<!-- <div class="main-slider-line-1"><h3>"Success is a journey,</h3></div>
@@ -20,7 +20,7 @@
 		</div>
 		<div class="item">
 			<div class="main-slider-image" style="background-image: url('assets/img/slider-images/image2.png')">
-				<div class="main-slider-overlay">
+				<div class="main-image-overlay">
 					<div class="carousel-caption">
 						<h3>"Enhancing the capability of your up and coming and senior leaders will mean that they are able to better manage and independently accelerate the implementation of your most important strategies."</h3>
 						<!-- <div class="main-slider-line-1"><h3>"Do or do not,</h3></div>
@@ -31,7 +31,7 @@
 		</div>
 		<div class="item">
 			<div class="main-slider-image" style="background-image: url('assets/img/slider-images/image3.png')">
-				<div class="main-slider-overlay">
+				<div class="main-image-overlay">
 					<div class="carousel-caption">
 						<h3>"Strong leadership can lead people to lives that really matter, and it can be developed, cultivated and nurtured, and can lead organisations into a frontier of sustainable success."</h3>
 						<!-- <div class="main-slider-line-1"><h3>"Much Motivation,</h3></div>

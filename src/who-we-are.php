@@ -32,7 +32,9 @@ $record = mysqli_fetch_array($result);
 		}
 		?>
 		<div class="banner">
-			<div class="banner-word">"We aim to develop the leaders of today to change the world tomorrow."</div>
+			<div class="main-image-overlay">
+				<div class="banner-word">"We aim to develop the leaders of today to change the world tomorrow."</div>
+			</div>
 		</div>
 		<div class="container">
 			<div class="heading-container">
@@ -40,6 +42,10 @@ $record = mysqli_fetch_array($result);
 		      <div style="position: relative"><hr class="fancy-line"></div>
 		    </div>
 			<?php echo $record['content'] ?>
+			<div class="heading-container">
+		      <h2>Founder's Intro</h2>
+		      <div style="position: relative"><hr class="fancy-line"></div>
+		    </div>
 			<?php echo $record['ceo'] ?>
 			<!--<div>
 				<img class="img-responsive img-circle" src="gallery/images/<?php echo $record['img'] ?>" style="float:right; width: 340px; height: auto; margin-top: 4px; margin-bottom: 14px; margin-left: 16px">

@@ -20,7 +20,11 @@
   background-repeat: no-repeat;
   background-size: 100% auto;
 }
-
+@media screen and (max-width: 1000px) {
+  .main-slider-image {
+    background-size: auto auto;
+  }
+}
 .carousel-indicators li {
   width: 25px;
   height: 25px;
@@ -36,15 +40,14 @@
   border-radius: 20px;
 }
 
-.main-slider-overlay {
+.main-image-overlay {
   position: absolute;
 
   display: block;
 
   width: 100%;
   height: 100%;
-
-  /* background-color: rgba(0,0,0,.4); */
+  background-color: rgba(0,0,0,0.2);
 }
 .carousel-caption {
   top: 30%;

@@ -43,7 +43,10 @@ $acc_record = mysqli_fetch_array($acc_result);
       }
       ?>
       <div class="banner">
+         <div class="main-image-overlay">
             <div class="banner-word">"We aim to develop the leaders of today to change the world tomorrow."</div>
+         </div>
+            
       </div>
       <div class="container">
          <div class="heading-container">
