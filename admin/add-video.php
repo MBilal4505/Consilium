@@ -64,7 +64,7 @@
 			<div class="col-md-8 col-md-offset-2">
 				<div class="admin-hyperlink">
 					<a href="insert-gallery.php">
-						<button class="btn btn-consilium-o-back"><i class="fa fa-chevron-left"></i></button>
+						<button class="btn btn-consilium-o-back">Back</button>
 					</a>
 					<a style="float: right;" href="../features-videos.php">
 						<button class="btn btn-consilium-o-back">View "Features & Videos"</button></a>

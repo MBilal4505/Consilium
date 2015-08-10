@@ -61,41 +61,50 @@
 <body>
 	<script src="../../assets/js/ckeditor/ckeditor.js"></script>
 	<div class="container" style="margin-top: 20px;" >
-		<h1 class="admin-heading">Add Article</h1>
-		<form class="form-horizontal" role="form" enctype="multipart/form-data" action="article-update.php?uid=<?php echo $uid; ?>" method="post" name="form-article" id="form-article">
-		  	<div class="form-group">
-		    	<label for="title" class="col-sm-2 control-label">Title</label>
-		    	<div class="col-sm-10">
-		      		<input type="text" class="form-control" id="article-title" name="article-title" placeholder="Enter Heading." value="<?php echo $article_row['g_title'] ?>">
-		    	</div>
-		  	</div>
-		  	<div class="form-group">
-				<label for="content" class="col-sm-2 control-label">Write Here</label>
-				<div class="col-sm-10">
-					<textarea rows="10" class="form-control ckeditor" name="content" id="content"><?php echo $article_row['g_content'] ?></textarea>
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2">
+				<div class="admin-hyperlink">
+					<a href="../add-article.php">
+						<button class="btn btn-consilium-o-back">Back</button>
+					</a>
 				</div>
-		
+				<h1 class="admin-heading">Modify Article Content</h1>
+				<form class="form-horizontal" role="form" enctype="multipart/form-data" action="article-update.php?uid=<?php echo $uid; ?>" method="post" name="form-article" id="form-article">
+				  	<div class="form-group">
+				    	<label for="title" class="col-sm-2 control-label">Title</label>
+				    	<div class="col-sm-10">
+				      		<input type="text" class="form-control" id="article-title" name="article-title" placeholder="Enter Heading." value="<?php echo $article_row['g_title'] ?>">
+				    	</div>
+				  	</div>
+				  	<div class="form-group">
+						<label for="content" class="col-sm-2 control-label">Write Here</label>
+						<div class="col-sm-10">
+							<textarea rows="10" class="form-control ckeditor" name="content" id="content"><?php echo $article_row['g_content'] ?></textarea>
+						</div>
+				
+					</div>
+					<div class="form-group">
+				    	<label for="file" class="col-sm-2 control-label">Browse File</label>
+				    	<div class="col-sm-10">
+				      		<div class="col-sm-4">
+				      			<input type="file" id="image" name="image" placeholder="Browse for the image.">
+				      		</div>
+				      		<div class="col-sm-8">
+				      			<span style="vertical-align: top; margin-right: 20px;">Currently Selected Image</span>
+				      			<img style="width: 400px;" src="../../gallery/images/<?php echo $article_row['g_image'] ?>" alt="" />
+				      		</div>
+				    	</div>
+				  	</div>
+					<div class="form-group">
+				    	<div class="col-sm-offset-2 col-sm-10">
+				    		<button type="submit" class="btn btn-default">Submit</button>
+				    		<input type="hidden" value="article" name="totem-that">
+				    	</div>
+					</div>
+				  	
+				</form>
 			</div>
-			<div class="form-group">
-		    	<label for="file" class="col-sm-2 control-label">Browse File</label>
-		    	<div class="col-sm-10">
-		      		<div class="col-sm-4">
-		      			<input type="file" id="image" name="image" placeholder="Browse for the image.">
-		      		</div>
-		      		<div class="col-sm-8">
-		      			<span style="vertical-align: top; margin-right: 20px;">Currently Selected Image</span>
-		      			<img style="width: 400px;" src="../../gallery/images/<?php echo $article_row['g_image'] ?>" alt="" />
-		      		</div>
-		    	</div>
-		  	</div>
-			<div class="form-group">
-		    	<div class="col-sm-offset-2 col-sm-10">
-		    		<button type="submit" class="btn btn-default">Submit</button>
-		    		<input type="hidden" value="article" name="totem-that">
-		    	</div>
-			</div>
-		  	
-		</form>
+		</div>
 	</div>
 </body>
 </html>

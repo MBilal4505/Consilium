@@ -74,7 +74,7 @@
 			<div class="col-md-8 col-md-offset-2">
 				<div class="admin-hyperlink">
 					<a href="insert-gallery.php">
-						<button class="btn btn-consilium-o-back"><i class="fa fa-chevron-left"></i></button>
+						<button class="btn btn-consilium-o-back">Back</button>
 					</a>
 					<a style="float: right;" href="../features-videos.php">
 						<button class="btn btn-consilium-o-back">View "Features & Videos"</button></a>
@@ -100,7 +100,7 @@
 				    	<label for="file" class="col-sm-2 control-label">Browse Image</label>
 				    	<div class="col-sm-10">
 				      		<input type="file" id="image" name="image" placeholder="Browse for the image.">
-				      		<span>Please provide image with ratio 4:3. Square or portrait images will not look good at all.</span>
+				      		<span>Please provide image with ratio 4:3. Common 4:3 image resolutions are: 640x480, 800x600, 1024x768, 1152x864, 1280x960, 1400x1050, 1600x1200, 2048x1536.</span>
 				    	</div>
 				  	</div>
 					<div class="form-group">
