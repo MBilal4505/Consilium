@@ -7,11 +7,21 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Management Consultancy</title>
 	<link rel="stylesheet" href="../assets/css/custom.min.css" />
+	<style>
+		.container-fluid h3 a:hover {
+			opacity: 0.2;
+		}
+	</style>
 </head>
 <body>
 	<?php include_once 'admin-header.html' ?>
 	
 	<div class="container-fluid" style="margin-top: 20px">
+		<div class="admin-hyperlink" style="min-height: 40px;">
+			<a style="float: right;" href="logout.php">
+				<button class="btn btn-consilium-o-back">Log Out</button>
+			</a>
+		</div>
 		<h1 class="admin-heading">Admin Panel</h1>
 		<h3 class="text-center">
 			<a href="admin-users.php">Users</a>

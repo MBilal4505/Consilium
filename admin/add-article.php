@@ -6,10 +6,13 @@
 	$article_query = "SELECT * FROM gallery WHERE g_type='article'";
 	$article_result = mysqli_query($con, $article_query);
 	$article_record = mysqli_fetch_array($article_result);
+	$title = "";
+	$content = "";
 	if(isset($_POST['totem-that'])) {
 		$valid_types = array('jpeg','jpg','JPG','JPEG','png','PNG');
 		$image = $_FILES['image']['name'];
-		
+		$title = $_POST['article-title'];
+		$content = $_POST['content'];
 		if($image != "") {
 			list($filename,$extension) = explode('.', $image);
 		}
@@ -18,15 +21,13 @@
 		$tmp = $_FILES['image']['tmp_name'];
 		list($width, $height) = getimagesize($tmp);
 		$ratio = $width / $height;
-		if ($ratio < 1.65) {
+		if ($ratio < 1.34) {
 			$g_type = "article";
 			if($size < 50 * 1024 * 1024) {
 				if($image != "") {
 					if(in_array($extension, $valid_types)) {
 						$target = '../gallery/images/'.$image;
 						if(move_uploaded_file($tmp, $target)) {
-							$title = $_POST['article-title'];
-							$content = $_POST['content'];
 							$date = date('d-m-Y');
 							$author = $_SESSION['username'];
 							$query = "INSERT INTO gallery VALUES ('', '$title', '$content', '$image', '$image', '$date', '$author', '', '$g_type');";
@@ -50,7 +51,7 @@
 			}
 		}
 		else {
-			$message = "Please provide an image with aspect ratio 4:3 or 3:2.";
+			$message = "Please provide an image with aspect ratio 4:3.";
 		}
 	}
 	else {
@@ -86,13 +87,13 @@
 				  	<div class="form-group">
 				    	<label for="title" class="col-sm-2 control-label">Title</label>
 				    	<div class="col-sm-10">
-				      		<input type="text" class="form-control" id="article-title" name="article-title" placeholder="Enter Heading.">
+				      		<input type="text" class="form-control" id="article-title" name="article-title" placeholder="Enter Heading." value="<?php echo $title; ?>">
 				    	</div>
 				  	</div>
 				  	<div class="form-group">
 						<label for="content" class="col-sm-2 control-label">Write Here</label>
 						<div class="col-sm-10">
-							<textarea rows="10" class="form-control ckeditor" name="content" id="content"></textarea>
+							<textarea rows="10" class="form-control ckeditor" name="content" id="content"><?php echo $content ?></textarea>
 						</div>
 				
 					</div>

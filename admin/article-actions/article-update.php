@@ -6,43 +6,53 @@
 	$article_query = "SELECT * FROM gallery WHERE g_id='$uid'";
 	$article_result = mysqli_query($con, $article_query);
 	$article_row = mysqli_fetch_array($article_result);
+	$title = "";
+	$content = "";
 	if(isset($_POST['totem-that'])) {
 		$valid_types = array('jpeg','jpg','JPG','JPEG','png','PNG');
 		$image = $_FILES['image']['name'];
+		$title = $_POST['article-title'];
+		$content = $_POST['content'];
 		if($image != "") {
 			list($filename,$extension) = explode('.', $image);
 		}
 		$size = $_FILES['image']['size'];
 		$type = $_FILES['image']['type'];
 		$tmp = $_FILES['image']['tmp_name'];
-		$g_type = "article";
-		if($size < 50 * 1024 * 1024) {
-			if($image != "") {
-				if(in_array($extension, $valid_types)) {
-					$target = '../../gallery/images/'.$image;
-					if(move_uploaded_file($tmp, $target)) {
-						$title = $_POST['article-title'];
-						$content = $_POST['content'];
-						$date = date('d-m-Y');
-						$author = $_SESSION['username'];
-						$query = "UPDATE gallery SET g_title='$title', g_content='$content', g_alt='$image', g_image='$image', g_date='$date', g_author='$author', g_type='$g_type' WHERE g_id='$uid';";
-						if($result = mysqli_query($con, $query)) {
-							header('Location: ../../features-videos.php');
-							$message = "Image Uploaded";
-						}
-						else {
-							$message = "Error Occured";
-							echo mysqli_error($con);
+		list($width, $height) = getimagesize($tmp);
+		$ratio = $width / $height;
+		if ($ratio < 1.34 && $ratio > 1.2) {
+			$g_type = "article";
+			if($size < 50 * 1024 * 1024) {
+				if($image != "") {
+					if(in_array($extension, $valid_types)) {
+						$target = '../../gallery/images/'.$image;
+						if(move_uploaded_file($tmp, $target)) {
+							
+							$date = date('d-m-Y');
+							$author = $_SESSION['username'];
+							$query = "UPDATE gallery SET g_title='$title', g_content='$content', g_alt='$image', g_image='$image', g_date='$date', g_author='$author', g_type='$g_type' WHERE g_id='$uid';";
+							if($result = mysqli_query($con, $query)) {
+								header('Location: ../../features-videos.php');
+								$message = "Image Uploaded";
+							}
+							else {
+								$message = "Error Occured";
+								echo mysqli_error($con);
+							}
 						}
 					}
+					else {
+						$message = "Invalid image format.";
+					}
 				}
-				else {
-					$message = "Invalid image format.";
-				}
+			}
+			else {
+				$message = "Image size is too large. Max limit is 5MB";
 			}
 		}
 		else {
-			$message = "Image size is too large. Max limit is 5MB";
+			$message = "Pleaes provide an image with ration 4:3."
 		}
 	}
 	else {

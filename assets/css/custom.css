@@ -184,7 +184,7 @@ body p {
 	padding: 4px 8px 7px;
 	border-radius: 12px;
 	background-color: #FFF;
-	opacity: .6;
+	opacity: .8;
 	position: fixed;
 	right: 10px;
 	z-index: 9000;
@@ -346,9 +346,15 @@ ul, ol {
 	color: #34ACA0;
 	min-width: 80px;
 	background: transparent;
+	border: 1px solid #34aca0;
+	font-weight: bold
 }
 .btn:hover {
 	background-color: #FFFFFF;
+}
+.btn-consilium-o-back:hover {
+	color: #FFFFFF;
+	background-color: #34ACA0;
 }
 .btn-consilium-o-green {
 	color: #00A652;
