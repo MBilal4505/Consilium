@@ -21,7 +21,7 @@
 		$tmp = $_FILES['image']['tmp_name'];
 		list($width, $height) = getimagesize($tmp);
 		$ratio = $width / $height;
-		if ($ratio < 1.34) {
+		if ($ratio < 1.34 && $ratio > 1.2) {
 			$g_type = "article";
 			if($size < 50 * 1024 * 1024) {
 				if($image != "") {
