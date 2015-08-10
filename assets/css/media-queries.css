@@ -59,8 +59,8 @@
 		width: 62%;
 	}
 	.navbar .container-fluid {
-		padding-right: 0;
-		padding-left: 0;
+		padding-right: 15px;
+		padding-left: 15px;
 	}
 	.navbar-collapse {
 		padding-top: 12px;
@@ -133,5 +133,15 @@
 	.nav-top span {
 		padding: 4px;
 		font-size: 9px;
+	}
+}
+@media screen and (orientation: portrait) {
+	.banner {
+		background-size: 100% auto;
+	}
+}
+@media screen and (orientation: landscape) {
+	.banner {
+		background-size: 100% auto;
 	}
 }

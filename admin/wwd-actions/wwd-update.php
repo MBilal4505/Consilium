@@ -74,6 +74,11 @@
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-md-8 col-md-offset-2">
+				<div class="admin-hyperlink">
+					<a href="../change-wwd.php">
+						<button class="btn btn-consilium-o-back">Back</button>
+					</a>
+				</div>
 				<h1 class="text-center">Modify Accordion Content</h1>
 				<h3>
 				</h3>

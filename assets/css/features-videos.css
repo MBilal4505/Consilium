@@ -262,12 +262,9 @@ h4:hover {
 		margin-top: 10px;
 		margin-bottom: 10px;
 	}
-}
-@media screen and (min-width: 764px) {
 	.img_object .img-overlay {
-		bottom: -4px;
+		bottom: 10px;
 	}
-	
 }
 
 @media (max-width: 660px) {
@@ -301,7 +298,7 @@ h4:hover {
 	}
 	.another-overlay {
 	    width: 388px;
-	    height: 194px;
+	    height: 220px;
 	}
 	.img-overlay {
 		width: 388px;
@@ -315,6 +312,7 @@ h4:hover {
 		margin-top: 10px;
 		margin-bottom: 10px;
 	}
+	
 }
 .thumbnail {
 	background-color: rgba(0,0,0,0);
@@ -376,6 +374,9 @@ h4:hover {
 	h4 {
 		margin-bottom: 2px;
 	}
+	.img_object .img-overlay {
+		bottom: 62px;
+	}
 }
 @media (max-width: 370px) {
 	.gallery li video {
@@ -393,9 +394,6 @@ h4:hover {
 		width: 280px;
 		margin-left: 3%;
 	}
-	.another-overlay {
-	    width: 242px;
-	}
 	.img-overlay {
 		width: 242px;
 		bottom: 100px;
@@ -406,6 +404,13 @@ h4:hover {
 	}
 	h1 {
 		margin-bottom: 1em;
+	}
+	.img_object .img-overlay {
+		bottom: 100px;
+	}
+	.another-overlay {
+		width: 242px;
+	    height: 150px;
 	}
 }
 @media screen and (max-width: 320px) {

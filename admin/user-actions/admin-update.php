@@ -49,6 +49,11 @@
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-md-8 col-md-offset-2">
+				<div class="admin-hyperlink">
+					<a href="../admin-users.php">
+						<button class="btn btn-consilium-o-back">Back</button>
+					</a>
+				</div>
 				<h1 class="text-center">Update User</h1>
 				<h3>
 				</h3>
