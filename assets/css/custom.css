@@ -3,7 +3,7 @@
 */
 /*@import url('../font-awesome/css/font-awesome.min.css');*/
 
-a, button, .overlay, .another-overlay, #edit-page {
+a, button, .overlay, .another-overlay, #edit-page, .video-slider span, .carousel-control {
 	transition-duration: 0.4s;
 	-o-transition-duration: 0.4s;
   	-moz-transition-duration: 0.4s;
@@ -50,6 +50,9 @@ body p {
 	z-index: 50;
 }
 .navbar-nav {
+	background-color: #FFF;
+}
+.navbar-collapse {
 	background-color: #FFF;
 }
 .navbar-collapse a {
@@ -179,7 +182,7 @@ body p {
 	padding: 10px 4px;
 } */
 #edit-page {
-	margin-top: 12px;
+	margin-top: 32px;
 	margin-right: 4px;
 	padding: 4px 8px 7px;
 	border-radius: 12px;

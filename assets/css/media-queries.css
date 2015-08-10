@@ -64,6 +64,7 @@
 	}
 	.navbar-collapse {
 		padding-top: 12px;
+		margin-top: 9px;
 	}
 	.banner-word {
 		top: 80px;
@@ -115,9 +116,13 @@
 	}
 	.banner {
 		background-position: center 0% !important;
+		height: 210px;
 	}
 	.nav-top span {
 		font-size: 10px;
+	}
+	.navbar-collapse {
+		margin-top: 10px;
 	}
 }
 @media screen and (max-width: 350px) {
@@ -137,7 +142,7 @@
 }
 @media screen and (orientation: portrait) {
 	.banner {
-		background-size: auto 100%;
+		background-size: 100% auto;
 	}
 }
 @media screen and (orientation: landscape) {

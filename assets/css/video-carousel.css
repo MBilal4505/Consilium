@@ -15,6 +15,10 @@ video {
 }
 .carousel-control {
 	position: initial;
+	opacity: 1;
+}
+.carousel-control:hover {
+	opacity: .5;
 }
 .left-arrow {
 	left; 4px;
