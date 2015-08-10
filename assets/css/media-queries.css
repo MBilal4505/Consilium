@@ -137,7 +137,7 @@
 }
 @media screen and (orientation: portrait) {
 	.banner {
-		background-size: 100% auto;
+		background-size: auto 100%;
 	}
 }
 @media screen and (orientation: landscape) {

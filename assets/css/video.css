@@ -11,16 +11,6 @@
 	overflow-x: hidden;
 	padding-left: 0px;
 }
-/*@media screen and (min-width: 661px) {
-	.video-slider li {
-		width: 450px;
-	}
-}
-@media screen and (max-width: 660px) {
-	.video-slider li {
-		width: 60px;
-	}
-}*/
 @media screen and (min-width: 769px) {
 	.video-slider li {
 		width: 30%;
