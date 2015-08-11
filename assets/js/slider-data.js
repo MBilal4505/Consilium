@@ -6,11 +6,11 @@ var anchor = $('.anchor').position().left;
                     scrollLeft: $('.videos').scrollLeft() - width
                 }, 300);
             }
-            else if($('.videos').scrollLeft() == 0) {
+            /*else if($('.videos').scrollLeft() == 0) {
                 $('.videos').animate({
                     scrollLeft: anchor
                 }, 300);
-            }
+            }*/
         });
 
         $(".right").click(function() {
