@@ -34,7 +34,7 @@
 		?>
 		<div class="banner">
 			<div class="main-image-overlay">
-				<div class="banner-word">"We aim to develop the leaders of today to change the world tomorrow."</div>
+				<div class="banner-word">"We can help transform your organisation by enhancing the capability of your up and coming and senior leaders."</div>
 			</div>
 		</div>
 		<div class="container">

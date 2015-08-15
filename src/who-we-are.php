@@ -33,7 +33,7 @@ $record = mysqli_fetch_array($result);
 		?>
 		<div class="banner">
 			<div class="main-image-overlay">
-				<div class="banner-word">"We aim to develop the leaders of today to change the world tomorrow."</div>
+				<div class="banner-word">"Helping people learn the lessons of Leadership can create a more connected, integrated and prosperous world."</div>
 			</div>
 		</div>
 		<div class="container">

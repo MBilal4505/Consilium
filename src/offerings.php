@@ -9,6 +9,7 @@ $record = mysqli_fetch_array($result);
 $acc_query = "SELECT * FROM offering_accordion";
 $acc_result = mysqli_query($con, $acc_query);
 $acc_record = mysqli_fetch_array($acc_result);
+$images = array('', 'o-1', 'o-2', 'o-3', 'o-4', 'o-5', 'o-6', 'o-7', 'o-8');
 ?>
 <!DOCTYPE html>
 <html>
@@ -44,7 +45,7 @@ $acc_record = mysqli_fetch_array($acc_result);
       ?>
       <div class="banner">
          <div class="main-image-overlay">
-            <div class="banner-word">"We aim to develop the leaders of today to change the world tomorrow."</div>
+            <div class="banner-word">"Our offerings can optimise the potential of organisations and lead them towards being more effective and achieving greater success."</div>
          </div>
             
       </div>
@@ -74,8 +75,9 @@ $acc_record = mysqli_fetch_array($acc_result);
                      </h4>
                   </div>
                   <div id="collapse<?php echo $i ?>" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
-                     <div class="panel-body">
-                        <?php echo $acc_record['oc_content']; ?>
+                     <div class="panel-body" align="center">
+                        <div class="panel-image"><img class="img-responsive" src="assets/img/slider-images/<?php echo $images[$i] ?>.jpg" alt=""></div>
+                        <div class="panel-content"><?php echo $acc_record['oc_content']; ?></div>
                      </div>
                   </div>
                </div>

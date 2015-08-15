@@ -9,6 +9,7 @@ $record = mysqli_fetch_array($result);*/
 $acc_query = "SELECT * FROM wwd_accordion";
 $acc_result = mysqli_query($con, $acc_query);
 $acc_record = mysqli_fetch_array($acc_result);
+$images = array('', 'wwd-1', 'wwd-2', 'wwd-3', 'wwd-4', 'wwd-5', 'wwd-6');
 ?>
 <!DOCTYPE html>
 <html>
@@ -59,7 +60,7 @@ $acc_record = mysqli_fetch_array($acc_result);
                     </div>
                     <div id="collapse<?php echo $i ?>" class="panel-collapse collapse <?php if($i==1) {echo "in";} ?>" role="tabpanel" aria-labelledby="headingOne">
                         <div class="panel-body" align="center">
-                            <div class="panel-image"><img class="img-responsive" src="assets/img/slider-images/image1.png" alt=""></div>
+                            <div class="panel-image"><img class="img-responsive" src="assets/img/slider-images/<?php echo $images[$i] ?>.jpg" alt=""></div>
                             <div class="panel-content"><?php echo $acc_record['dc_content']; ?></div>
                         </div>
                     </div>

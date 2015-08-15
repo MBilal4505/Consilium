@@ -304,26 +304,7 @@ h2 {
 	text-align: center;
 	font-weight: bold;
 }
-.banner {
-	width: 100%;
-	height: 300px;
-	background-repeat: no-repeat;
-	/* background-size: auto 100%; */
-	background-position: center;
-	position: relative;
-	font-family: 'lato-light';
-}
-.banner-word {
-	position: absolute;
-	width: 60%;
-	text-align: center;
-	top: 106px;
-	font-size: 30px;
-	color: rgb(255, 255, 255);
 
-	margin-left: 20%;
-	text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
-}
 .container {
 	max-width: 1200px;
 }
@@ -413,22 +394,41 @@ ul, ol {
 	margin: 0px auto;
 }
 /*--------------------------- Banners ---------------------------*/
+.banner {
+	width: 100%;
+	height: 300px;
+	background-repeat: no-repeat;
+	/* background-size: auto 100%; */
+	background-position: center;
+	position: relative;
+	font-family: 'lato-light';
+}
+.banner-word {
+	position: absolute;
+	width: 70%;
+	text-align: center;
+	top: 106px;
+	font-size: 30px;
+	color: rgb(255, 255, 255);
 
+	margin-left: 15%;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
+}
 .wwb-body .banner {
-	background-image: url(../img/slider-images/image10.jpg);
-	background-position: center 0;
+	background-image: url(../img/slider-images/who-will-benefit.jpg);
+	background-position: center 52%;
 }
 .what-we-do-body .banner {
-	background-image: url(../img/slider-images/image8.jpg);
-	background-position: center 18%;
+	background-image: url(../img/slider-images/what-we-do.jpg);
+	background-position: center 48%;
 }
 .wwa-body .banner {
-	background-image: url(../img/slider-images/image9.jpg);
-	background-position: center 12%;
+	background-image: url(../img/slider-images/who-we-are.jpg);
+	background-position: center 13%;
 }
 .offering-body .banner {
-	background-image: url(../img/slider-images/image7.jpg);
-	background-position: center 37%;
+	background-image: url(../img/slider-images/offerings.jpg);
+	background-position: center 8%;
 }
 
 /*--------------------------- Footer ---------------------------*/
