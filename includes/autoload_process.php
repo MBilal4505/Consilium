@@ -21,7 +21,7 @@ $items_per_group = 8;
 	    {
 	    	if($row['g_type'] == "video") {
 	    		echo '
-	        	<li class="col-lg-4 col-md-4 col-sm-6 col-xs-6 g_object ">
+	        	<li class="g_object fv-object">
 	        		<div class="embed-responsive embed-responsive-4by3">
 		        		<video class="embed-responsive-item" disabled preload="metadata">
 							<source src="gallery/videos/'.$row['g_video'].'" type="video/mp4">
@@ -29,23 +29,22 @@ $items_per_group = 8;
 							<input type="hidden" value="'.$row['g_content'].'" id="content">
 							<input type="hidden" value="'.$row['g_title'].'" id="title">
 						</video>
-						<div class="overlay"><img src="assets/img/video_play.png">
-							<div class="img-overlay video-overlay">
-		                    	<h2>'.$row["g_title"].'</h2>
-		                    </div>
-						</div>
+						<div class="another-overlay" align="center"><img src="assets/img/video_play.png"></div>
+						<div class="img-overlay">
+	                    	<h4>'.$row["g_title"].'</h4>
+	                    </div>
 	        		</div>
                 </li>
                 ';
 	    	}
 	    	else if($row['g_type'] == 'article') {
 	    		echo '
-	        	<li class="col-lg-4 col-md-4 col-sm-6 col-xs-6 img_object">
+	        	<li class="img_object fv-object">
                     <a href="articles/article.php?article='.$row['g_id'].'">
-                    	<img class="img-responsive thumbnail" src="gallery/images/'.$row['g_image'].'"/>
+                    	<img class="img-responsive" src="gallery/images/'.$row['g_image'].'"/>
                     	<div class="another-overlay"></div>
 	                    <div class="img-overlay">
-	                    	<h2>'.$row["g_title"].'</h2>
+	                    	<h4>'.$row["g_title"].'</h4>
 	                    </div>
 	                    
 	                </a>

@@ -23,8 +23,9 @@ if(!isset($_SESSION)) {
 	<script type="text/javascript" src="assets/js/jquery.min.js"></script>
     <!-- <link href='http://fonts.googleapis.com/css?family=Raleway:300|Quicksand' rel='stylesheet' type='text/css'> -->
     
-	<link rel="stylesheet" href="assets/css/features.min.css" />
+	<link rel="stylesheet" href="assets/css/custom.min.css" />
 	<link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="assets/css/features.css" />
 	<script type="text/javascript">
     	$(document).ready(function() {
 		    var track_click = 0; //total loaded record group(s)
@@ -88,7 +89,7 @@ if(!isset($_SESSION)) {
 		            <h2>Features & Videos</h2>
 		            <div style="position: relative"><hr class="fancy-line"></div>
 		      	</div>
-			<div class="main">
+			<div class="main" align="center">
 				<div class="modal fade" id="myModal" tabindex="99999" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 			      	<div class="modal-dialog">
 				        <div class="modal-content">
