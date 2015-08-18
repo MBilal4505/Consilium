@@ -3,48 +3,72 @@
 <?php
 	$message="";
 	$date="";
-	$video_query = "SELECT * FROM gallery WHERE g_type='video'";
+	$video_query = "SELECT * FROM gallery WHERE g_type='video' OR g_type='embed'";
 	$video_result = mysqli_query($con, $video_query);
 	$video_record = mysqli_fetch_array($video_result);
+
 	if (isset($_GET['status'])) {
 
 		$valid_types = array('mp4','flv','MP4','FLV');
 		$video = $_FILES['video-upload']['name'];
-		if ($video != "") {
-			list($filename,$extension) = explode('.', $video);
+		if ($video != "" && $_POST['youtube-link'] != "") {
+			$message = "Please provide either a video upload or an embed link.";
 		}
-		$size = $_FILES['video-upload']['size'];
-		$type = $_FILES['video-upload']['type'];
-		$tmp = $_FILES['video-upload']['tmp_name'];
-		$g_type = "video";
-		if($size < (50 * 1024 * 1024)) {
+		else {
 			if ($video != "") {
-				if (in_array($extension, $valid_types)) {
-					$target = '../gallery/videos/'.$video;
-					if (move_uploaded_file($tmp, $target)) {
-						$title = $_POST['video-title'];
-						// $content = $_POST['description'];
-						$date = date('d-m-Y');
-						$author = $_SESSION['username'];
-						$query = "INSERT INTO gallery VALUES ('', '$title', '', '', '', '$date', '$author', '$video', '$g_type');";
-						if ($result = mysqli_query($con, $query)) {
-							header('Location: ../features-videos.php');
-							$message = "Video Uploaded";
+				list($filename,$extension) = explode('.', $video);
+				$size = $_FILES['video-upload']['size'];
+				$type = $_FILES['video-upload']['type'];
+				$tmp = $_FILES['video-upload']['tmp_name'];
+				$g_type = "video";
+				if($size < (50 * 1024 * 1024)) {
+					if ($video != "") {
+						if (in_array($extension, $valid_types)) {
+							$target = '../gallery/videos/'.$video;
+							if (move_uploaded_file($tmp, $target)) {
+								$title = $_POST['video-title'];
+								// $content = $_POST['description'];
+								$date = date('d-m-Y');
+								$author = $_SESSION['username'];
+								$query = "INSERT INTO gallery VALUES ('', '$title', '', '', '', '$date', '$author', '$video', '$g_type');";
+								if ($result = mysqli_query($con, $query)) {
+									header('Location: ../features-videos.php');
+									$message = "Video Uploaded";
+								}
+								else {
+									$message = "Error Occured";
+									echo mysqli_error($con);
+								}
+							}
 						}
 						else {
-							$message = "Error Occured";
-							echo mysqli_error($con);
+							$message = "Invalid video format.";
 						}
 					}
 				}
 				else {
-					$message = "Invalid video format.";
+					$message = "Video size is too large. Max limit is 50MB";
+				}
+			}
+			elseif ($_POST['youtube-link'] != "") {
+				$title = $_POST['video-title'];
+				$author = $_SESSION['username'];
+				$link = htmlentities($_POST['youtube-link']);
+				$date = date('d-m-Y');
+				$g_type = "embed";
+				$query = "INSERT INTO gallery VALUES ('', '$title', '', '', '', '$date', '$author', '$link', '$g_type');";
+				if ($result = mysqli_query($con, $query)) {
+					header('Location: ../features-videos.php');
+					$message = "Video Uploaded";
+				}
+				else {
+					$message = "Error Occured";
+					echo mysqli_error($con);
 				}
 			}
 		}
-		else {
-			$message = "Video size is too large. Max limit is 50MB";
-		}
+		
+		
 	}
 ?>
 <!DOCTYPE html>
@@ -86,9 +110,17 @@
 				      		<span>MP4 and FLV videos are supported.</span>
 				    	</div>
 				  	</div>
+				  	<h3 style="text-align: center">OR</h3>
+			  		<div class="form-group">
+				  	  	<label for="youtube-link" class="col-sm-2 control-label">Embed Youtube Link</label>
+
+				  	  	<div class="col-sm-10">
+				  	   		<input type="text" class="form-control" id="youtube-link" name="youtube-link" placeholder="Enter Youtube Embed Link">
+				  	  	</div>
+			  		</div>
 				  	<div class="form-group">
 				    	<div class="col-sm-offset-2 col-sm-10">
-				    		<button type="submit" class="btn btn-default">Submit</button>
+				    		<button type="submit" id="submit" class="btn btn-default">Submit</button>
 				    		<input type="hidden" value="video" name="totem-this">
 				    	</div>
 					</div>

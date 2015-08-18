@@ -21,7 +21,7 @@ $items_per_group = 8;
 	    {
 	    	if($row['g_type'] == "video") {
 	    		echo '
-	        	<li class="g_object fv-object">
+	        	<li class="g_object video_object fv-object">
 	        		<div class="embed-responsive embed-responsive-4by3">
 		        		<video class="embed-responsive-item" disabled preload="metadata">
 							<source src="gallery/videos/'.$row['g_video'].'" type="video/mp4">
@@ -51,6 +51,17 @@ $items_per_group = 8;
                 </li>
                 ';
 	    	}
+	    	else if($row['g_type'] == 'embed') {
+	    		echo '
+				<li class="embed_object fv-object g_object">
+	        		'. html_entity_decode($row['g_video']) .'
+					<div class="another-overlay" align="center"><img src="assets/img/video_play.png"></div>
+					<div class="img-overlay">
+                    	<h4>'.$row["g_title"].'</h4>
+                    </div>
+				</li>
+                ';
+	    	}
 	    }
 	unset($obj);
 	$con->close();
@@ -66,7 +77,7 @@ $items_per_group = 8;
 		$('video').attr('disabled', 'disabled');
 		$('video').removeAttr('controls');
 		$('.overlay').css('display', 'block');
-		$(".g_object").click(function() {
+		$(".g_object.video_object").click(function() {
 	        var src = $(this).find("source").attr("src");
 	        var content = $(this).find("#content").attr("value");
 	        var title = $(this).find("#title").attr("value");
@@ -79,5 +90,14 @@ $items_per_group = 8;
 	            $("#myModal .modal-body").html('');
 	        });
 		});
+		$('.embed_object').click(function () {
+			var src = $(this).find('iframe').attr("src");
+			var title = $(this).find('#title').attr("value");
+			var video = '<iframe src="'+src+'" width="600px" height="400px"></iframe>'
+			$('#myModal').modal();
+			$('#myModal').on('shown.bs.modal', function () {
+				$('#myModal .modal-body').html(video);
+			});
+		})
 	}
 </script>

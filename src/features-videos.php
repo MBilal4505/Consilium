@@ -19,7 +19,7 @@ if(!isset($_SESSION)) {
     <meta name="viewport" content="width=device-width">
     <link rel="shortcut icon" href="assets/img/Consilium.svg">
 	<title>Consilium - Features & Videos</title>
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	
 	<script type="text/javascript" src="assets/js/jquery.min.js"></script>
     <!-- <link href='http://fonts.googleapis.com/css?family=Raleway:300|Quicksand' rel='stylesheet' type='text/css'> -->
     
@@ -48,7 +48,7 @@ if(!isset($_SESSION)) {
 		                    $('.animation_image').hide(); //hide loading image once data is received
 		                    $("#gallery").append(data); //append received data into the element
 		                    //hide loading image
-
+		                    
 		                    track_click++; //loaded group increment
 
 		                }).fail(function(xhr, ajaxOptions, thrownError) { //any errors?
@@ -119,7 +119,10 @@ if(!isset($_SESSION)) {
 		</div>
 	</div>
 	<?php require_once 'includes/footer.html' ?>
+	<script>
+		$('iframe').css('width', '100%');
+		$('iframe').css('height', '100%');
+	</script>
 	<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="assets/js/main.js"></script>
 </body>
 </html>

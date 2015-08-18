@@ -73,6 +73,10 @@ video {
 .modal-content {
 	background-color: #bdc3c7;
 }
+.fv-object iframe {
+	width: 100% !important;
+	height: 100% !important;
+}
 @media screen and (max-width: 1200px) {
 	.fv-object {
 		width: 30%;
