@@ -1,7 +1,7 @@
 <?php
 	require_once 'connections/connection.php';
 
-	$query = "SELECT * FROM gallery WHERE g_type = 'video' ORDER BY g_id DESC LIMIT 5";
+	$query = "SELECT * FROM gallery WHERE g_type = 'video' OR g_type = 'embed' ORDER BY g_id DESC LIMIT 5";
 	$result = mysqli_query($con, $query);
 	$row = mysqli_fetch_array($result);
 	$row_num = mysqli_num_rows($result);
@@ -18,6 +18,7 @@
 	  	<!-- Wrapper for slides -->
 	  	<div class="carousel-inner" role="listbox">
 	  		<?php $l = 0; do { $l++; ?>
+	  			<?php if ($row['g_type'] == 'video') {?>
 	  			<div class="item <?php if ($l==1){echo 'active'; } ?>">
 		    		<video class="embed-responsive-item" controls>
 						<source src="gallery/videos/2.mp4">
@@ -25,6 +26,11 @@
 						<input type="hidden" value="" id="title">
 					</video>
 			    </div>
+			    <?php }else if ($row['g_type'] == 'embed') { ?>
+				<div class="item <?php if ($l==1){echo 'active'; } ?>">
+		    		<?php echo html_entity_decode($row['g_video']); ?>
+			    </div>
+			<?php } ?>
 	  		<?php } while ( $row = mysqli_fetch_array($result) ); ?>
 	  	</div>
 
@@ -40,4 +46,5 @@
 		    <span class="sr-only">Next</span>
 		</a>
 	</div>
+	
 </div>

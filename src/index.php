@@ -75,5 +75,8 @@
     <script type="text/javascript" src="assets/js/slider-data.js"></script>
     <script type="text/javascript" src="assets/js/main-slider-pause.js"></script>
     <script type="text/javascript" src="assets/js/main.js"></script>
+    <script>
+        $('iframe').css('width', '100%');
+    </script>
 </body>
 </html>
