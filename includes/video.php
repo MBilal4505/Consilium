@@ -1,7 +1,7 @@
 	<?php
 		require_once 'connections/connection.php';
 
-		$query = "SELECT * FROM gallery WHERE g_type = 'video' OR g_type = 'embed' ORDER BY g_id DESC LIMIT 5";
+		$query = "SELECT * FROM gallery WHERE g_type = 'video' ORDER BY g_id DESC LIMIT 5";
 		$result = mysqli_query($con, $query);
 		$row = mysqli_fetch_array($result);
 	?>
