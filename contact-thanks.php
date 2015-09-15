@@ -6,7 +6,7 @@
     <link rel="shortcut icon" href="assets/img/Consilium.svg">
 	<title>Consilium - Contact</title>
 	<meta http-equiv="refresh" content="3;URL=index.php">
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/custom.min.css">
     
 </head>
 <body>
