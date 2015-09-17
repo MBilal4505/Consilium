@@ -15,7 +15,7 @@ $items_per_group = 8;
 	$position = ($page_number * $items_per_group);
 
 	//Limit our results within a specified range.
-	$results = mysqli_query($con, "SELECT * From gallery ORDER BY g_id DESC LIMIT $position, $items_per_group");
+	$results = mysqli_query($con, "SELECT * From gallery WHERE g_type='embed' OR g_type='article' ORDER BY g_id DESC LIMIT $position, $items_per_group");
 
 	    while($row = mysqli_fetch_array($results))
 	    {
