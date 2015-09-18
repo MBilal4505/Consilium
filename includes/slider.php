@@ -8,7 +8,7 @@
 
 	<div class="carousel-inner" role="list-box">
 		<div class="item active">
-			<div class="main-slider-image" style="background-image: url('assets/img/slider-images/slider-1.jpg')">
+			<div class="main-slider-image" style="background-image: url('assets/img/slider-images/slider-3.jpg')">
 				<div class="main-image-overlay">
 					<div class="carousel-caption">
 						<h3>"We aim to develop the leaders of today to change the world tomorrow."</h3>
@@ -30,7 +30,7 @@
 			</div>
 		</div>
 		<div class="item">
-			<div class="main-slider-image" style="background-image: url('assets/img/slider-images/slider-3.jpg')">
+			<div class="main-slider-image" style="background-image: url('assets/img/slider-images/slider-1.jpg')">
 				<div class="main-image-overlay">
 					<div class="carousel-caption">
 						<h3>"Strong leadership can lead people to lives that really matter, and it can be developed, cultivated and nurtured, and can lead organisations into a frontier of sustainable success."</h3>

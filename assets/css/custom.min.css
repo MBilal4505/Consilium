@@ -7387,7 +7387,7 @@ h4 {
 }
 
 body {
-    font-family: lato-light, sans-serif;
+    font-family: oxygen, sans-serif;
     background-color: #eee
 }
 
@@ -7402,7 +7402,7 @@ body {
 .carousel .h3,
 .heading>h1,
 body p {
-    font-family: lato-light
+    font-family: oxygen
 }
 
 @font-face {
@@ -7428,6 +7428,11 @@ body p {
 @font-face {
     font-family: raleway-medium;
     src: url(../fonts/raleway_medium.ttf)
+}
+
+@font-face {
+	font-family: oxygen;
+	src: url(../fonts/Oxygen-Regular.ttf);
 }
 
 .navbar {
@@ -7821,7 +7826,7 @@ ul {
 
 .special-p {
     width: 100%;
-    background-color: #01a688;
+    background-color: #34ACA0;
     padding: 40px 16px 66px
 }
 
@@ -8006,6 +8011,10 @@ footer ul {
     width: 24%;
     border-right: 1px solid #ddd;
     padding: 0 20px
+}
+
+.firm-tiles a {
+	color: #000;
 }
 
 .firm-tiles-container {

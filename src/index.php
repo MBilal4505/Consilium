@@ -50,20 +50,28 @@
         <div class="firm-tiles-container" align="center">
             <ul>
                 <li class="firm-tiles">
-                    <div class="firm-img-container"><div><img src="assets/img/hbs.png"></div></div>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    <a href="http://hbs.edu">
+                    	<div class="firm-img-container"><div><img src="assets/img/hbs.png"></div></div>
+                    	Harvard Business School
+                    </a>
                 </li>
                 <li class="firm-tiles">
-                    <div class="firm-img-container"><div><img src="assets/img/newcastle.png"></div></div>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    <a href="http://newcastle.edu.au">
+                    	<div class="firm-img-container"><div><img src="assets/img/newcastle.png"></div></div>
+                    	The University of Newcastle
+                    </a>
                 </li>
                 <li class="firm-tiles">
-                    <div class="firm-img-container"><div><img src="assets/img/capgemini.png"></div></div>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    <a href="http://mitsloan.mit.edu">
+                    	<div class="firm-img-container"><div><img src="assets/img/capgemini.png"></div></div>
+                    	MIT Sloan School of Management
+                    </a>
                 </li>
                 <li style="border-right: none;" class="firm-tiles">
-                    <div class="firm-img-container"><div><img src="assets/img/ibm.png"></div></div>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    <a href="http://ibm.com">
+                    	<div class="firm-img-container"><div><img src="assets/img/ibm.png"></div></div>
+                    	IBM Global Business Service
+                    </a>
                 </li>
             </ul>
         </div>
