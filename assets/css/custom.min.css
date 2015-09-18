@@ -7852,23 +7852,23 @@ ul {
 }
 
 .wwb-body .banner {
-    background-image: url(../img/slider-images/banner-1.jpg);
-    background-position: center 52%
+    background-image: url(../img/slider-images/who-will-benefit.jpg);
+    background-position: center 58%
 }
 
 .what-we-do-body .banner {
-    background-image: url(../img/slider-images/banner-2.jpg);
-    background-position: center 22%
+    background-image: url(../img/slider-images/what-we-do.jpg);
+    background-position: center 48%
 }
 
 .wwa-body .banner {
-    background-image: url(../img/slider-images/banner-3.jpg);
-    background-position: center 0%
+    background-image: url(../img/slider-images/who-we-are.jpg);
+    background-position: center 12%
 }
 
 .offering-body .banner {
-    background-image: url(../img/slider-images/banner-4.jpg);
-    background-position: center 52%
+    background-image: url(../img/slider-images/offerings.jpg);
+    background-position: center 6%
 }
 
 footer {
@@ -8097,8 +8097,8 @@ footer ul {
 
 @media screen and (max-width:854px) {
     .nav>li>a {
-        padding-left: 8px;
-        padding-right: 8px
+        padding-left: 7px;
+        padding-right: 7px
     }
 }
 
