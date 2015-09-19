@@ -52,25 +52,25 @@
                 <li class="firm-tiles">
                     <a href="http://hbs.edu">
                     	<div class="firm-img-container"><div><img src="assets/img/hbs.png"></div></div>
-                    	Harvard Business School
+                    	Harvard Business School<br/> World's leading centre for business research and education
                     </a>
                 </li>
                 <li class="firm-tiles">
                     <a href="http://newcastle.edu.au">
                     	<div class="firm-img-container"><div><img src="assets/img/newcastle.png"></div></div>
-                    	The University of Newcastle
+                    	The University of Newcastle<br/> World class institution making an impact within its own region
                     </a>
                 </li>
                 <li class="firm-tiles">
                     <a href="http://mitsloan.mit.edu">
                     	<div class="firm-img-container"><div><img src="assets/img/capgemini.png"></div></div>
-                    	MIT Sloan School of Management
+                    	MIT Sloan School of Management<br/> Leading school advancing management practice through innovation and invention
                     </a>
                 </li>
                 <li style="border-right: none;" class="firm-tiles">
                     <a href="http://ibm.com">
                     	<div class="firm-img-container"><div><img src="assets/img/ibm.png"></div></div>
-                    	IBM Global Business Service
+                    	IBM Global Business Services<br/> World's leading innovation company changing the way we live and work
                     </a>
                 </li>
             </ul>
