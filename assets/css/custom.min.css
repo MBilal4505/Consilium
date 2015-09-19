@@ -4641,7 +4641,7 @@ textarea.input-group-sm>.input-group-btn>.btn {
     overflow-y: auto
 }
 
-@media (min-width:768px) {
+@media (min-width:982px) {
     .navbar {
         border-radius: 4px
     }
@@ -4806,7 +4806,7 @@ textarea.input-group-sm>.input-group-btn>.btn {
     }
 }
 
-@media (min-width:768px) {
+@media (min-width:982px) {
     .navbar-toggle {
         display: none
     }
@@ -8110,19 +8110,35 @@ footer ul {
     .panel-content {
         width: 62%
     }
-    .navbar .container-fluid {
+    .banner-word {
+        top: 48px
+    }
+    .banner-word {
+	    top: 48px
+	}
+}
+
+@media screen and (max-width: 981px) {
+	.navbar-toggle {
+        margin-top: 23px
+    }
+	.navbar .container-fluid {
+	    padding-right: 15px;
+	    padding-left: 15px
+	}
+	.navbar-collapse {
+	    padding-top: 12px
+	}
+	.navbar .container-fluid {
         padding-right: 15px;
         padding-left: 15px
     }
     .navbar-collapse {
         padding-top: 12px
     }
-    .banner-word {
-        top: 48px
-    }
-    .navbar-toggle {
-        margin-top: 23px
-    }
+	.navbar-toggle {
+	    margin-top: 23px
+	}
 }
 
 @media screen and (max-width:640px) {
