@@ -7525,7 +7525,8 @@ body p {
 }
 
 .navbar-small .navbar-brand img {
-    height: 72px
+    height: 72px;
+    margin-top: 2px;
 }
 
 .navbar-small li a {
@@ -7868,7 +7869,7 @@ ul {
 
 .offering-body .banner {
     background-image: url(../img/slider-images/offerings.jpg);
-    background-position: center 6%
+    background-position: center 16%
 }
 
 footer {
@@ -8389,7 +8390,7 @@ footer ul {
     width: 100%;
     height: 600px;
     background-position: center;
-    background-size: 100% auto
+    background-size: auto 100%
 }
 
 @media screen and (max-width:1000px) {
@@ -8439,7 +8440,11 @@ footer ul {
 .main-slider-line-2 {
     margin-left: 10em
 }
-
+@media screen and (max-width: 1436px) {
+	.main-slider-image {
+		background-size: auto 100%;
+	}
+}
 @media screen and (max-width:1115px) {
     .carousel-caption h3 {
         font-size: 26px

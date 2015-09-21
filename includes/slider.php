@@ -30,7 +30,7 @@
 			</div>
 		</div>
 		<div class="item">
-			<div class="main-slider-image" style="background-image: url('assets/img/slider-images/slider-1.jpg')">
+			<div class="main-slider-image" style="background-image: url('assets/img/slider-images/slider-1.jpg');">
 				<div class="main-image-overlay">
 					<div class="carousel-caption">
 						<h3>"Strong leadership can lead people to lives that really matter, and it can be developed, cultivated and nurtured, and can lead organisations into a frontier of sustainable success."</h3>
