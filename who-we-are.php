@@ -45,8 +45,26 @@ $record = mysqli_fetch_array($result);
 			<div class="heading-container">
 		      <h2>Founder's Intro</h2>
 		      <div style="position: relative"><hr class="fancy-line"></div>
+		      <h3 style="text-align: center; color: #F4A74B">Hassan Khan</h3>
+		      <div style="position: relative"><hr class="fancy-line"></div>
 		    </div>
-			<?php echo $record['ceo'] ?>
+		    <div class="row">
+					<img class="intro-hassan" src="assets/img/slider-images/intro-hassan.jpg" alt="">
+		    	
+		    		<p>Hassan has spent the best part of the last decade working with leaders and helping them successfully lead significant change and transformation efforts. A qualified Lawyer, Hassan transitioned into Consulting after moving to England from Australia a number of years ago. His work has been focused on and around Leadership Development, and enabling companies to formulate and then accelerate the implementation of their most important strategies – specifically facilitating the people change and transition of new organisational models, structures and culture into businesses.</p>
+
+		    		<p>Hassan is a graduate and alumni of Harvard Business School, he holds an Economics degree, a Law degree and a Master of Business Administration degree, and he is a Master Practitioner in Neuro-Linguistic Programming. Hassan has worked for IBM Global Business Services and Capgemini Consulting, and has worked for a number of high profile clients, such as the NHS, BP, Merrill Lynch and EDF Energy (to name a few), and on numerous high profile projects. He has designed Leadership Programs for specific organisations, he has designed, initiated and scaled successful change efforts, and he has reorganised and reenergised systems and structures to create efficient processes within and for a number of different client organisations.</p>
+
+		    		<p>During his few years at Harvard Business School, Hassan’s primary focus of study was on Leadership Development. He has completed extensive research on Personal Leadership, Leading Change and Decision Making, and he has studied in depth the function and practice of Leadership and its ability to mobilise people, groups, organisations, and cultures to achieve and produce results. Hassan believes strongly in the ability of effective Leadership to provide orientation and reassurance in addressing the biggest problems and toughest challenges facing the world today – within government, business, economic and social development, sports, management etc. He has no doubt that Leadership can be taught and shaped gradually, and that helping people find their unique voice and learn the lessons of Leadership can create a more connected, integrated and prosperous world.</p>
+
+		    		<p>Motivated and inspired after graduating, Hassan was driven by a desire to do more meaningful work and make a bigger impact in the world. He is passionate about educating, motivating and helping people, and felt strongly about using his expertise and experience to enhance the Leadership capability of individuals and groups within various organisations and settings in different parts of world (and in particular the developing world, where there traditionally isn’t access to cutting-edge learning and/or deep Leadership expertise). Hassan’s diverse research background, coupled with his advanced study and broad base of experience enabled and led him to create Consilium - a Leadership Development firm offering a curriculum of learning that aims to develop the next generation of high potential leaders. Hassan hopes Consilium will provide and be a spark that makes a positive difference in people’s lives, and helps them grow, develop and perform at their highest potential on behalf of the common good. Consilium is offering its Leadership Development services and packages to entities all over the world.</p>
+
+		    		<p>Hassan is an avid book reader, a passionate cricket fan and active player, an amateur magician, and is currently researching and writing a book about the psychological factors and influences that get in the way of leading effective change.</p>
+					<?php echo $record['ceo'] ?>	
+		    	
+				
+				
+		    </div>
 			
 		
 		

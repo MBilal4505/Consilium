@@ -7859,7 +7859,7 @@ ul {
 
 .what-we-do-body .banner {
     background-image: url(../img/slider-images/what-we-do.png);
-    background-position: center 60%;
+    background-position: center 48%;
 }
 
 .wwa-body .banner {
@@ -7910,7 +7910,6 @@ footer ul {
 
 .connect-links a {
     display: block;
-    height: 100%
 }
 
 .connect-container,
@@ -7948,7 +7947,7 @@ footer ul {
 }
 
 #extra-links li {
-    padding: 0 10px
+    padding: 8px 10px;
 }
 
 .panel-default>.panel-heading {
@@ -8515,12 +8514,6 @@ video {
     padding-bottom: 2em
 }
 
-@media screen and (max-width:768px) {
-    .video-carousel {
-        display: block
-    }
-}
-
 .carousel-control .glyphicon-chevron-left,
 .carousel-control .glyphicon-chevron-right,
 .carousel-control .icon-next,
@@ -8568,4 +8561,20 @@ video {
 
 .video-carousel video {
     border: 1px solid #383838
+}
+
+.intro-hassan {
+	width: 40%;
+	float: right;
+	margin-left: 2rem;
+}
+
+@media screen and (max-width:768px) {
+    .video-carousel {
+        display: block
+    }
+    .intro-hassan {
+    	width: 90%;
+    	margin: 2rem 5%;
+    }
 }
