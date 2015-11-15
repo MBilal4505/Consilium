@@ -10,3 +10,4 @@ Gruntfile.js
 
 dploy.yaml
 .rev
+connections/connection.php
