@@ -27,7 +27,7 @@
 					</video>
 			    </div>
 			    <?php }else if ($row['g_type'] == 'embed') { ?>
-				<div style="min-height: 200px;"> class="item <?php if ($l==1){echo 'active'; } ?>">
+				<div style="min-height: 200px;" class="item <?php if ($l==1){echo 'active'; } ?>">
 		    		<?php echo html_entity_decode($row['g_video']); ?>
 			    </div>
 			<?php } ?>
