@@ -49,8 +49,9 @@
 		</div>
 		<div class="row">
 			<div class="col-lg-9 content-container">
+				<?php if($image !== "") { ?>
 				<img src="../gallery/images/<?php echo $image ?>" class="img-responsive a-img">
-
+				<?php } ?>
 				<div class="content">
 					<?php echo $content ?>
 				</div>
@@ -60,7 +61,13 @@
 				<ul>
 					<?php do { ?>
 						<li class="">
-		                    <a href="article.php?article='<?php echo $extra_row['g_id'] ?>'"><img class="img-responsive thumbnail" src="../gallery/images/<?php echo $extra_row['g_image'] ?>"/></a>
+		                    <a href="article.php?article='<?php echo $extra_row['g_id'] ?>'">
+		                    	<?php if($extra_row['g_image'] !== "") {?>
+		                    	<img class="img-responsive thumbnail" src="../gallery/images/<?php echo $extra_row['g_image'] ?>"/>
+		                    	<?php } else { ?>
+		                    	<img class="img-responsive thumbnail" src="../gallery/images/default.png"/>
+		                    	<?php } ?>
+		                    </a>
 		                </li>
 					<?php }while($extra_row = mysqli_fetch_array($extra_result)) ?>
 				</ul>
