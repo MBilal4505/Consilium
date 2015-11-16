@@ -15,7 +15,7 @@
         $phpmailer->SMTPSecure = 'tls';
         $phpmailer->Port = 587;
         $phpmailer->Username = "ahmadnauroz@gmail.com";
-        $phpmailer->Password = "Sodesune!4";
+        $phpmailer->Password = "";
 
         $phpmailer->From = "thenewdawn1994@hotmail.com";
         $phpmailer->FromName = $name;

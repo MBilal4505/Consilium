@@ -30,7 +30,7 @@
 				<li class="list-<?php echo $l ?>">
 					<div class="embed-responsive embed-responsive-4by3 video-cont">
 						<?php echo html_entity_decode($row['g_video']); ?>
-						<div class="overlay"><img src="assets/img/video_play.png"></div>
+						
 					</div>
 					<?php if ($l == 5) {  ?>
 						<div class="anchor"></div>
