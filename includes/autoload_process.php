@@ -39,17 +39,14 @@ $items_per_group = 8;
 	    	}
 	    	else if($row['g_type'] == 'article') {
 	    		echo '
-	        	<li class="img_object fv-object">
-                    <a href="articles/article.php?article='.$row['g_id'].'">
-                    	<img class="img-responsive" src="gallery/images/'.$row['g_image'].'"/>
-                    	<div class="another-overlay"></div>
-	                    <div class="img-overlay">
-	                    	<h4>'.$row["g_title"].'</h4>
-	                    </div>
-	                    
-	                </a>
-                </li>
-                ';
+	        	<li class="img_object fv-object"><a href="articles/article.php?article='.$row['g_id'].'">';
+            	if ($row['g_image'] !== "") {
+            		echo '<img class="img-responsive" src="gallery/images/'.$row['g_image'].'"/>';
+            	}
+            	else {
+            		echo '<img class="img-responsive" src="gallery/images/default.png"/>';
+            	}
+            	echo '<div class="another-overlay"></div><div class="img-overlay"><h4>'.$row["g_title"].'</h4></div></a></li>';
 	    	}
 	    	else if($row['g_type'] == 'embed') {
 	    		echo '
