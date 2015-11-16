@@ -66,39 +66,63 @@
               <h2>Contact Us</h2>
               <div style="position: relative"><hr class="fancy-line"></div>
             </div>
-            <form class="form-horizontal" role="form" name="contact-form" method="post" action="contact.php">
-                <div class="form-group">
-                    <div class="col-sm-6">
-                        <div class="form-group">
-                            <div class="col-sm-12">
-                                <input type="text" class="form-control" name="name" placeholder="Your Name">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="form-group">
-                            <div class="col-sm-12">
-                                <input type="email" class="form-control" name="email" placeholder="Your Email">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <div class="col-sm-12">
-                        <input type="text" class="form-control" name="subject" placeholder="Subject">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <div class="col-sm-12">
-                        <textarea rows="10" cols="40" class="form-control" placeholder="Your Message" name="message"></textarea>
-                    </div>
-                </div>
-                <div>
-                    <button type="submit" class="btn btn-consilium-round">Submit</button>
-                    <input type="hidden" name="mm_hidden" value="mm_hidden">
-                </div>
-                
-            </form>
+            <div style="margin-bottom: 30px;">
+            </div>
+            <div class="col-md-4">
+            	<h3 style="color: #34ACA0">Get in touch</h3>
+            	<table class="table">
+            		<tr>
+            			<td><i style="color: #34ACA0" class="fa fa-envelope"></i></td>
+            			<td>info@consiliumleadership.com</td>
+            		</tr>
+            		<tr>
+            			<td><i style="color: #34ACA0" class="fa fa-phone"></i></td>
+            			<td>+44 7780699695</td>
+            		</tr>
+            		<tr>
+            			<td><i style="color: #34ACA0" class="fa fa-location-arrow"></i></td>
+            			<td>Consilium, Mallard House, St John’s Wood, London, NW8 7AN</td>
+            		</tr>
+            	</table>
+            	<!-- <h5> info@consiliumleadership.com</h5>
+            	<h5> +44 7780699695</h5>
+            	<h5> Consilium, Mallard House, St John’s Wood, London, NW8 7AN</h5> -->
+            </div>
+            <div class="col-md-7 col-md-offset-1">
+            	<form class="form-horizontal" role="form" name="contact-form" method="post" action="contact.php">
+            	    <div class="form-group">
+            	        <div class="col-sm-6">
+            	            <div class="form-group">
+            	                <div class="col-sm-12">
+            	                    <input type="text" class="form-control" name="name" placeholder="Your Name">
+            	                </div>
+            	            </div>
+            	        </div>
+            	        <div class="col-sm-6">
+            	            <div class="form-group">
+            	                <div class="col-sm-12">
+            	                    <input type="email" class="form-control" name="email" placeholder="Your Email">
+            	                </div>
+            	            </div>
+            	        </div>
+            	    </div>
+            	    <div class="form-group">
+            	        <div class="col-sm-12">
+            	            <input type="text" class="form-control" name="subject" placeholder="Subject">
+            	        </div>
+            	    </div>
+            	    <div class="form-group">
+            	        <div class="col-sm-12">
+            	            <textarea rows="10" cols="40" class="form-control" placeholder="Your Message" name="message"></textarea>
+            	        </div>
+            	    </div>
+            	    <div>
+            	        <button type="submit" class="btn btn-consilium-round">Submit</button>
+            	        <input type="hidden" name="mm_hidden" value="mm_hidden">
+            	    </div>
+            	    
+            	</form>
+            </div>
         </div>
     </div>
 
