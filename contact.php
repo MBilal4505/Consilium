@@ -10,17 +10,17 @@
         $message = $_POST['message'];
 
         $phpmailer->IsSMTP();
-        $phpmailer->Host = "smtp.gmail.com";
+        $phpmailer->Host = "mail.consiliumleadership.com";
         $phpmailer->SMTPAuth = true;
         $phpmailer->SMTPSecure = 'tls';
-        $phpmailer->Port = 587;
-        $phpmailer->Username = "ahmadnauroz@gmail.com";
-        $phpmailer->Password = "";
+        $phpmailer->Port = 143;
+        $phpmailer->Username = "hello@consiliumleadership.com";
+        $phpmailer->Password = "EJ(nDmpKncs)";
 
-        $phpmailer->From = "thenewdawn1994@hotmail.com";
+        $phpmailer->From = $sender;
         $phpmailer->FromName = $name;
-        $phpmailer->addAddress('thenewdawn1994@yahoo.com', 'Nauroz Ahmad');
-        $phpmailer->addReplyTo('thenewdawn1994@hotmail.com', 'Reply Info');
+        $phpmailer->addAddress('info@consiliumleadership.com', 'Consilium');
+        $phpmailer->addReplyTo('info@consiliumleadership.com', 'Reply Info');
 
         $phpmailer->Subject = 'Consultancy Contacted';
         $phpmailer->Body = "Sender Email: " . $sender . " Name: " . $name . "\r\n \r\n" . $message;
