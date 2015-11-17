@@ -26,11 +26,11 @@
 			if ($ratio < 1.34 && $ratio > 1.2) {
 				if($size < 50 * 1024 * 1024) {
 						if(in_array($extension, $valid_types)) {
-							$target = '../gallery/images/'.$image;
+							$target = '../../gallery/images/'.$image;
 							if(move_uploaded_file($tmp, $target)) {
 								$query = "UPDATE gallery SET g_title='$title', g_content='$content', g_alt='$image', g_image='$image', g_date='$date', g_author='$author', g_type='$g_type' WHERE g_id='$uid';";
 								if($result = mysqli_query($con, $query)) {
-									header('Location: ../features-videos.php');
+									header('Location: ../../features-videos.php');
 									$message = "Article Updated";
 								}
 								else {
@@ -54,7 +54,7 @@
 		else {
 			$query = "UPDATE gallery SET g_title='$title', g_content='$content', g_alt='', g_image='', g_date='$date', g_author='$author', g_type='$g_type' WHERE g_id='$uid';";
 			if($result = mysqli_query($con, $query)) {
-				header('Location: ../features-videos.php');
+				header('Location: ../../features-videos.php');
 				$message = "Article Updated";
 			}
 			else {
