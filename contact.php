@@ -8,22 +8,23 @@
         $sender = $_POST['email'];
         $name = $_POST['name'];
         $message = $_POST['message'];
+        $subject = $_POST['subject'];
 
         $phpmailer->IsSMTP();
         $phpmailer->Host = "mail.consiliumleadership.com";
         $phpmailer->SMTPAuth = true;
         $phpmailer->SMTPSecure = 'tls';
-        $phpmailer->Port = 143;
+        $phpmailer->Port = 26;
         $phpmailer->Username = "hello@consiliumleadership.com";
         $phpmailer->Password = "EJ(nDmpKncs)";
 
         $phpmailer->From = $sender;
         $phpmailer->FromName = $name;
-        $phpmailer->addAddress('info@consiliumleadership.com', 'Consilium');
-        $phpmailer->addReplyTo('info@consiliumleadership.com', 'Reply Info');
+        $phpmailer->addAddress('info@consiliumleadership.com', 'Consilium Contacted');
+        $phpmailer->addReplyTo($sender, 'Reply Info');
 
-        $phpmailer->Subject = 'Consultancy Contacted';
-        $phpmailer->Body = "Sender Email: " . $sender . " Name: " . $name . "\r\n \r\n" . $message;
+        $phpmailer->Subject = $subject;
+        $phpmailer->Body = $message;
 
 
         if(!$phpmailer->Send()) {
