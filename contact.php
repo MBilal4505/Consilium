@@ -20,7 +20,7 @@
 
         $phpmailer->From = $sender;
         $phpmailer->FromName = $name;
-        $phpmailer->addAddress('info@consiliumleadership.com', 'Consilium Contacted');
+        $phpmailer->addAddress('hassan@consiliumleadership.com', 'Consilium Contacted');
         $phpmailer->addReplyTo($sender, 'Reply Info');
 
         $phpmailer->Subject = $subject;
