@@ -82,7 +82,7 @@
             		</tr>
             		<tr>
             			<td><i style="color: #34ACA0" class="fa fa-location-arrow"></i></td>
-            			<td>Consilium, Mallard House, St John’s Wood, London, NW8 7AN</td>
+            			<td><p>Consilium</p> <p>Mallard House, St John’s Wood,</p> <p>London - NW8 7AN</p> </td>
             		</tr>
             	</table>
             	<!-- <h5> info@consiliumleadership.com</h5>
